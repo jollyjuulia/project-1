@@ -1,0 +1,35 @@
+/* .container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    width: 100vw;
+    height: 100vh; */
+
+
+.main{
+    grid-area: 2/2/5/5;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+body{
+    background-color: rgb(156, 69, 144);
+}
+   
+.img{
+    grid-area: 1/2/2/6;
+    /* display: flex; */
+    background-color: black;
+    
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
