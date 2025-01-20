@@ -26,7 +26,8 @@
     justify-content: flex-end;
     height: 97%;
     padding-left: 20px;
-    width: 60vw
+    width: 60vw;
+    overflow: scroll;
 }
 
 h2{
@@ -214,7 +215,7 @@ header {
   }
   #mydivvvvvvv {
     position: absolute;
-   
+   left: 690px
    
     /* border: 1px solid #d3d3d3; */
   }
