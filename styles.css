@@ -19,21 +19,24 @@
     width:80%; */
     /* background-image: 50%; */
     /* font-family: 'my Font'; */
-    letter-spacing: 9px;
+    letter-spacing: 12px;
     font-size: 13px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 97%;
     padding-left: 20px;
     width: 60vw;
-    overflow: scroll;
+    overflow: scroll; */
 }
 
 h2{
     font-family: "my font";
     color: rgba(17, 20, 80, 0.615);
-    font-size: 15px;
+    font-size: 33px;
+    line-height: 50px;
+    margin-top: 3px;
+    padding-left: 15px;
 }
 
 body{
@@ -66,7 +69,7 @@ body{
 header {
     grid-row: span 1;
     
-    grid-column: span 5;
+    grid-column: span 4;
 }
 
 @font-face {
@@ -83,21 +86,22 @@ header {
     grid-area: 2/2/5/5;
     background-image: url(img/paper2.png);
     background-size: 100vw 100vh;
-    justify-content: flex-end;
-}
-  
-.three{
-    grid-area: 2/5/5/6;
-    display: flex;
-    width: 20vw;
-    justify-content: center;
-}
-
-.threed{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 10px;
+    /* justify-content: flex-end; */
 }
+  
+.three{
+    grid-area: 1/5/6/6;
+    display: flex;
+    width: 20vw;
+    justify-content: center;
+    /* align-items: flex-end; */
+    height: 100%
+}
+
 
 #mydiv {
     position: absolute;
@@ -229,4 +233,3 @@ header {
 
   }
 
- 
