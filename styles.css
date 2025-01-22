@@ -67,10 +67,15 @@ body{
 } */
 
 
-header {
+/* header {
     grid-row: span 1;
     
     grid-column: span 4;
+} */
+
+
+.header .random{
+    grid-area: 1/1/2/4
 }
 
 @font-face {
@@ -234,3 +239,10 @@ header {
 
   }
 
+
+  audio{
+    grid-area: 1/4/2/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
