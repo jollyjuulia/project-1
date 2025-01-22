@@ -1,0 +1,47 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 16px;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.youtube{
+    grid-area: 2/1/5/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text{
+    grid-area: 5/1/6/4;
+    text-align: center
+}
+
+.head {
+    grid-area: 3/4/6/7;
+    text-align: center;
+
+}
+
+body{
+    background-image: url(img/paper.jpg);
+    background-size: 100vw ;
+}
+
+
+@font-face {
+    font-family: my font;
+    src: url(img/Myfont-Regular.ttf);
+    
+  }
+
+
+
+h2{
+    font-family: "my font";
+    font-size: 30px
+}
