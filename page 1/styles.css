@@ -274,7 +274,7 @@ body{
     top: -20px;
     left: 50%;
     transform: translateX(-50%);
-    background:radial-gradient(pink, rgb(128, 187, 60));
+    background:radial-gradient(rgba(255, 192, 203, 0.875), rgba(128, 187, 60, 0.605));
     color: #fff;
     padding: 5px 10px;
     border-radius: 3px;
