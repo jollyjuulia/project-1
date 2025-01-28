@@ -274,12 +274,12 @@ body{
     top: -20px;
     left: 50%;
     transform: translateX(-50%);
-    background:radial-gradient(pink, blue);
+    background:radial-gradient(pink, rgb(128, 187, 60));
     color: #fff;
     padding: 5px 10px;
     border-radius: 3px;
     transition: opacity 0.3s ease-in-out;
-    font-family: monospace
+    font-family: "Doto", serif;
 }
 
 .logo3:hover .hover-text {
@@ -288,3 +288,15 @@ body{
 }
 
 
+.doto-uniquifier{
+    font-family: "Doto", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:"ROND" 0;
+  }
+
+
+
+  
+ 
