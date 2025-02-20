@@ -12,7 +12,18 @@
 
             
         <div class="grid-container">
-            
+          <div class = "button">
+            <button id="dropdownButton">click for links</button>
+            <div id="dropdownMenu" class="dropdown-content">
+              <ul>
+                <li>1. https://stock.adobe.com/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bfetch_excluded_assets%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=letters+fridge+magnets&order=relevance&limit=100&search_page=1&search_type=autosuggest&acp=3&aco=fridge+letter&get_facets=0&asset_id=442835434</li>
+                <li>2. https://www.walmart.com/ip/45-Pack-Round-Fridge-Magnets-Small-Strong-Magnets-for-Whiteboard-Fridge-Kitchen-Office-Classroom-Assorted/2439428088</li>
+                <li>3. https://coinsouvenirs.com/lucky-penny-thermometer-magnet/ </li>
+                <li>4. https://www.amazon.com/Francisco-Collectible-Souvenirs-Decorations-Handmade/dp/B0B17JWVVP/ref=sr_1_23?dib=eyJ2IjoiMSJ9.Wm3R7z-ksste1qHtJXPoUfJ2jFFuTQI7kcDLUAp7_3rzcZ4EerubdEcjrDPBcUXwjm1G772OFKMZSxnFIQotjgfxa48Y7h3r3ddgG2Vpw9C1-2W1c9XGhPkIAo512zRPKGveGwQcH0n4Cpk8KpYcPi4sF1Wk_PFQvUG9TCRoyU4uhzvwFW79s7FBwynQqNFP5FLLgQvdtORyiZedy4ou6ZTXq3xYDHIXPQil_xLmLgsDXjTjehdQHHRHqQuRENObOjtZFsFYCLacHWO2ll0M28c3lS-_LV507GIM8PB2-KzDEB_r_qKwmVmwfjvDwFFRZA6WTujWhbATTHppOBO2naNJz1d0UY7pi3anlEI0uTOyrJWgnsYbb2nc-OeAIzAq7gIBUt1GXCpXB1oO1G7tJ9ifk8u7DwM9HYWUEFickJCHLOBFmstUO34p3gze65Sr.AQO--pqqv1frBa2qNADh6xdqXosRjwqwhpouiBhE0S0&dib_tag=se&keywords=san+francisco+magnet&qid=1740086497&sr=8-23</li>
+               
+              </ul>
+            </div>
+          </div>
 <!-- 
     <audio controls autoplay loop style="float: right;">
         <source src="Beach House - Space Song.mp3" type="audio/mpeg"> 
@@ -131,7 +142,6 @@
                 </section>
                 </div>
 
-
                 <div class="three">
                     <section class="threed">
                     <a href="page 1/index.html"><img src="img/handle.png" style="height:100vh; " >
@@ -143,6 +153,24 @@
         </div>
 
 <script src="script.js"></script>
+<script>
+// Get the button and the dropdown
+const button = document.getElementById('dropdownButton');
+const dropdown = document.getElementById('dropdownMenu');
+
+// Toggle the dropdown visibility when the button is clicked
+button.addEventListener('click', function() {
+  dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+});
+
+// Close the dropdown if clicked outside
+window.addEventListener('click', function(event) {
+  if (!event.target.matches('#dropdownButton')) {
+    dropdown.style.display = 'none';
+  }
+});
+</script>
+
         <script>
             //Make the DIV element draggagle:
             dragElement(document.getElementById("mydiv"));
