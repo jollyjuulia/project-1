@@ -134,13 +134,15 @@
 
                 <div class="three">
                     <section class="threed">
-                    <a href="page 1/index.html"><img src="img/handle.png" style="width:150; height:90%;" >
+                    <a href="page 1/index.html"><img src="img/handle.png" style="height:100vh; " >
                     </section>
                 </div>
-
+                <div id="hover-box" class="hover-box" style="position: absolute;"></div>
 
             <!-- </div> -->
         </div>
+
+<script src="script.js"></script>
         <script>
             //Make the DIV element draggagle:
             dragElement(document.getElementById("mydiv"));
@@ -774,6 +776,24 @@
                         document.onmousemove = null;
                       }
                     }
+                    </script>
+
+                    <script>
+                      document.addEventListener("mousemove", function (e) {
+                        const hoverBox = document.getElementById("hover-box");
+                        hoverBox.style.left = e.pageX + "px";
+                        hoverBox.style.top = e.pageY + "px";
+                        hoverBox.innerHTML = "hmmm how do I open the fridge?";
+                        hoverBox.style.display = "block";
+                        hoverBox.style.fontFamily = "Arial, sans-serif"; // Change font family
+                        hoverBox.style.fontSize = "16px"; // Change font size
+                        hoverBox.style.color = "#333"; // Change font color
+                      });
+
+                      document.addEventListener("mouseout", function () {
+                        const hoverBox = document.getElementById("hover-box");
+                        hoverBox.style.display = "none";
+                      });
                     </script>
 
 
