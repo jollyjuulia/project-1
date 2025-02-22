@@ -194,7 +194,7 @@ h2{
     position: relative;
     width: 500px;
     height: 300px;
-    overflow: hidden; /* Ensures content stays inside the container */
+    overflow: hidden; 
     
 }
 
@@ -202,7 +202,7 @@ h2{
     width: 90%;
     height: 100%;
     object-fit: cover;
-    transition: filter 0.5s ease; /* Smooth blur transition */
+    transition: filter 0.5s ease; 
 }
 
 .image-container .overlay-text {
@@ -217,18 +217,18 @@ h2{
     color: white;
     font-size: 18px;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
-    opacity: 0; /* Hidden by default */
-    transition: opacity 0.5s ease; /* Smooth fade-in transition */
+    background-color: rgba(0, 0, 0, 0.6); 
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
     text-align: center;
     padding: 10px;
 }
 
 .image-container:hover img {
-    filter: blur(5px); /* Blur effect on hover */
+    filter: blur(5px); 
 }
 
 .image-container:hover .overlay-text {
-    opacity: 1; /* Reveal text on hover */
+    opacity: 1; 
 }
 
